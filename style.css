@@ -1,0 +1,258 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    position: fixed; /* Изменено на fixed для закрепления к верху страницы */
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 102px;
+    height: 89px;
+    padding-left: 40px;
+}
+
+.navigation {
+    margin-left: 20px; /* Отступ от логотипа */
+    display: flex;
+}
+
+.navigation a {
+    margin: 0 15px; /* Пространство между элементами навигации */
+    text-shadow: 2px 2px #F9EFE0;
+}
+
+.order{
+    position: absolute;
+    right: 0;
+    top: 108px;
+    height: 108px;
+    cursor: pointer;
+}
+
+.basket {
+    margin-left: auto;
+    margin-right: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    padding: 2px 7px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.basket img {
+    width: 44px;
+    height: 44px;
+}
+
+.main-bg {
+    background-image: url('~assets/Hero.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 538px;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+}
+
+.home-page{
+}
+
+.text-block {
+    text-align: center;
+    width: 514px;
+    margin: 92px 0;
+}
+.tx-symbol{
+    width: 86px;
+}
+
+.text-block-title {
+    font-size: 54px;
+    line-height: 1;
+    padding: 0 40px;
+}
+
+.text-block-addition{
+    font-size: 16px;
+}
+
+.shop-btn {
+    background: rgba(207, 140, 11, 0.1);
+    border: 1px solid #CF8C0B;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+.plus-btn{
+    vertical-align: middle;
+    width: 14px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+.card-btn {
+    width: 100%;
+    background: rgba(207, 140, 11, 0.1);
+    border: 1px solid #CF8C0B;
+    padding: 8px 28px 4px 28px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.arr-btn {
+    width: 18px;
+    padding-top: 3px;
+    margin-left: 4px;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.follow-us .icon {
+    margin: 0 6px;
+    width: 16px;
+}
+.follow-us .icon-ln {
+    margin-left: 10px;
+}
+
+.cake-card{
+    background: #F9EFE0;
+    display: inline-block;
+    white-space: normal;
+    width: 346px;
+    padding: 0 20px;
+    margin: 10px
+}
+
+.cake-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cake-wrap img {
+    height: 144px;
+    padding: 20px;
+    align-self: center;
+}
+
+.cake-wrap b, .cake-wrap p {
+    text-align: left;
+    width: 100%;
+}
+.cake-wrap p {
+    font-size: 14px;
+}
+
+.cake-card-block {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+.cake-counter-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cake-count-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px
+}
+.cake-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px
+}
+.counter-controls {
+    display: flex;
+    align-items: center;
+}
+.counter-controls label, .counter-controls select, .counter-controls .counter {
+    margin-right: 10px;
+}
+
+.cake-count {
+    width: 16px;
+}
+
+.counter, .cake-pack{
+    border: 1px solid transparent;
+    background: rgba(207, 140, 11, 0.1);
+    border-radius: 15px;
+    padding: 4px;
+}
+.cake-pack{
+    padding: 4px 8px 4px 16px;
+}
+.cake-pack b{
+   margin-right: 10px;
+}
+.cake-pack select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('~assets/Arrow.png') no-repeat right 10px center!important;
+    padding-right: 26px;
+    cursor: pointer;
+}
+
+.counter button, .counter input, .cake-pack select {
+    background: none;
+    border: none;
+}
+.counter input {
+    text-align: center;
+    cursor: default;
+}
+.counter button{
+    color: #CF8C0B;
+    cursor: pointer;
+    font-weight: bold;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
